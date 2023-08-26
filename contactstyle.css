@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(cleaner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 5px;
+} 
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 5% 30px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ee0909;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+} 
+.social-links{
+    padding: 0 50px;
+    height: 100;
+    overflow-y: auto;
+    font-size: 15px;
+    font-weight: 400;
+    color: #f1f1f1;
+}
+.social-links a{
+    display: flex;
+    background: #070202de;
+    height: 40px;
+    width: 150px;
+    margin: 0 30px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.social-links a i{
+    font-size: 30px;
+    color: #ffffff;
+}
+.social-links a .fa-facebook-f{
+    color: #3b5998;
+}
+.social-links a .fa-instagram{
+    color: #f14843;
+}
+.social-links a .fa-whatsapp{
+    color: #4fce5d;
+}
+.social-links a .fa-envelope{
+    color: #ff3300;
+}
